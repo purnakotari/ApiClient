@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <th>Name</th>
+            <th>city</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let items of persondetalies">
+               
+                <td class="table-info">{{items.name}}</td>
+                <td>{{items.city}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

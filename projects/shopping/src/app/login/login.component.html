@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="box">LoginDetalies</div>
+    <div class="row">
+        <div class="col-2">
+            <dl>
+                <dt>UserName</dt>
+                <dd>
+                    <input type="text" class="form-control-sm " [(ngModel)]="login.userName" />
+                </dd>
+                <dt>password</dt>
+                <dd>
+                    <input type="password" class="form-control-sm" [(ngModel)]="login.password" />
+                </dd>
+                <dt>email</dt>
+                <dd>
+                    <input type="email" class="form-control-sm" [(ngModel)]="login.Email" />
+                </dd>
+                <dt>Mobile</dt>
+                <dd>
+                    <input type="text" class="form-control-sm" [(ngModel)]="login.PhoneNumber" />
+                </dd>
+                <dt>Address</dt>
+                <dd>
+                    <textarea class="form-control-sm" rows="2" cols="26" [(ngModel)]="login.Address"></textarea>
+                </dd>
+            </dl>
+        </div>
+        <div class="col-4" style="text-align: center;">
+            <h2>detalies</h2>
+            <dl>
+                <dt>userName</dt>
+                <dd>{{login.userName}}</dd>
+                <dt>password</dt>
+                <dd>{{login.password}}</dd>
+                <dt>email</dt>
+                <dd>{{login.Email}}</dd>
+                <dt>mobile</dt>
+                <dd>{{login.PhoneNumber}}</dd>
+                <dt>address</dt>
+                <dd>{{login.Address}}</dd>
+            </dl>
+
+        </div>
+    </div>
+</div>

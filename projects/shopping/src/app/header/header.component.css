@@ -1,0 +1,7 @@
+.header{
+    width: 100%;
+    background-color: chartreuse;
+    height: 150px;
+    color: rgb(248, 55, 55);
+    display: flex;
+}

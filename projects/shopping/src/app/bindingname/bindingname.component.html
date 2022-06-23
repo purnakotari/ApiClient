@@ -1,0 +1,21 @@
+<div class="container">
+    <label>ProductName</label><br/>
+    <input type="text" [(ngModel)]="name"/><br/>
+    <label>Price</label><br/>
+    <input type="text" [(ngModel)]="price"/><br/>
+    <label>city</label><br/>
+    <select [(ngModel)]="city">
+        <option></option>
+        <option>hyderabad</option>
+        <option>mumbaie</option>
+        <option>kerla</option>
+    </select><br/>
+    <input type="checkbox" [(ngModel)]="stock"/>Avaliable
+</div>
+
+<div>
+ProductName:{{name}}<br/>
+price:{{price}}<br/>
+city:{{city}}<br/>
+stock:{{stock}}<br/>
+</div>

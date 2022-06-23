@@ -1,0 +1,19 @@
+
+<div class="container-fluid">
+
+    
+   
+    <h2>ProductDetalies</h2>
+    <dl>
+        <dt>Name</dt>
+        <dd>{{product.name}}</dd>
+        <dt>manfactur</dt>
+        <dd>{{product.manfactured}}</dd>
+        <dt>
+            <button class="btn btn-dark" (click)="showdata()">{{btntext}}</button>
+        </dt>
+        <dd *ngIf="isvisable">
+            <img [src]="product.photo" width="300" height="300" class="img-thumbnail "/>
+        </dd>
+    </dl>
+    </div>

@@ -1,0 +1,8 @@
+<input type="text"[(ngModel)]="todolist" value=""/>
+<button (click)="addlist()" class="btn btn-primary">addlist</button>
+<div *ngFor="let items of listArray; let index=index" >
+    <ol type="1">
+    <li>{{items}}</li>
+    </ol>
+    <button (click)="remove(index)" class="btn btn-dark">Delete</button>
+</div>

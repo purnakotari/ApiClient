@@ -1,0 +1,48 @@
+<div class="container">
+    <h2>studentDetailes</h2>
+    <div class="row">
+        <div class="col-3">
+            <dl>
+                <dt>StudentName</dt>
+                <dd>
+                    <input type="text" [(ngModel)]="student. StdudentName" class="form-control">
+                </dd>
+                <dt>StudentAge</dt>
+                <dd>
+                    <input type="text" [(ngModel)]="student.Age" class="form-control" />
+                </dd>
+                <dt>StudentCourse</dt>
+                <dd>
+                    <select [(ngModel)]="student.course" class="form-select">
+                        <option>Html css javascript</option>
+                        <option>Angular bootstrap</option>
+                        <option>mvc asp.net</option>
+                    </select>
+                </dd>
+                <dt>Address</dt>
+                <dd>
+                    <textarea class="form-control" rows="2" cols="23" [(ngModel)]="student. address"></textarea>
+                </dd>
+            </dl>
+
+        </div>
+
+        <div class="col-6" style="margin-left: 200px;" >
+            <h2 >detailes</h2>
+            StudentName:{{student.StdudentName}}<br/>
+            Age:{{student.Age}}<br/>
+            course:{{student.course}}<br/>
+           address:{{student.address}}<br/>
+        </div>
+    </div>
+</div>
+
+<div>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">secondary</button>
+    <button class="btn btn-danger">danger</button>
+    <button class="btn btn-dark">dark</button>
+    <button class="btn btn-success">success</button>
+    <button class="btn btn-warning">warning</button>
+    <button class="btn btn">check</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="container-fluid m-4">
+    
+    
+    <h2>Animal</h2>
+    <dl>
+        <dt>AnimalName</dt>
+        <dd>{{item.name}}</dd>
+        <dt>age</dt>
+        <dd>{{item.age}}</dd>
+        <dt>
+            <button class="btn btn-success" (click)="showdata()">{{btntext}}</button>
+        </dt>
+        <dd *ngIf="isvisable">
+            <img [src]="item.photo" width="200" height="200" class="img-thumbnail"/>
+        </dd>
+    </dl>
+</div>

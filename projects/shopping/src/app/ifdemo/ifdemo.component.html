@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <h2>productDetalies</h2>
+    <dl>
+        <dt>productName</dt>
+        <dd>{{product.name}}</dd>
+        <dt>price</dt>
+        <dd>{{product.price}}</dd>
+        <dt>
+            <button class="btn btn-danger" (click)="show()">{{btntext}}</button>
+        </dt>
+        <dd *ngIf="isvisable">
+            <img [src]="product.preview" width="200" height="200"/>
+        </dd>
+    </dl>
+</div>
